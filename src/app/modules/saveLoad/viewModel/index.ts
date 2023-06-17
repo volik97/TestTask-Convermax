@@ -42,7 +42,7 @@ export const useViewModel = () => {
         }
     }, [dispatch]);
 
-    const timerId = useRef<number>();
+    const timerId = useRef<any>();
     useEffect(() => {
         if(loadError){
             clearTimeout(timerId.current);
